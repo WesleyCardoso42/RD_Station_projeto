@@ -9,12 +9,15 @@
     <div class="info-esquerda">
         <div class="info-video">
             <h3>Entenda melhor como o RD Station Marketing funciona na prática</h3>
-            <a href="#"><img src="/img/botao-assistir.svg"></a>
+            <a class="open-modal"><img src="/img/botao-assistir.svg"></a>
         </div>
     </div>
-    <div class="imagem-video"><a href="#"><img src="/img/btn-play.svg"></a></div>
+    <div class="imagem-video">
+        <a class="open-modal"><img src="/img/btn-play.svg"></a>
+    </div>
     <div class="info-direita">
     </div>
+    <?php require_once "components/videopopup.php" ?>
 </section>
 <section class="botton-sections section03">
     <div class="info-esquerda">
