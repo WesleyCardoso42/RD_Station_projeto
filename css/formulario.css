@@ -1,0 +1,148 @@
+.form-cabecalho {
+    padding: 1.5rem;
+}
+
+.form-cabecalho h3 {
+    width: 280px;
+    height: 44px;
+    margin-top: 1em;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--bw-color-gray-100);
+}
+
+.form-cabecalho p {
+    width: 265px;
+    margin: 16px auto 0 auto;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--bw-color-gray-70);
+}
+
+hr {
+    border: 1px solid var(--bw-color-gray-30);
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+
+.form-cadastro {
+    height: 1083px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 490px;
+    height: auto;
+    margin-top: 32px;
+    background: var(--bw-color-white);
+    box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+    border-radius: 2px;
+}
+
+.form-cadastro .input-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0.5em 0;
+}
+
+.input-text input,
+label {
+    width: 100%;
+}
+
+.form-cadastro label {
+    width: 280px;
+    height: 28px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bw-color-black);
+}
+
+.form-cadastro input {
+    box-sizing: border-box;
+    height: 40px;
+    background: var(--bw-color-white);
+    border: 2px solid var(--bw-color-black);
+    box-shadow: inset 6px 6px 0px var(--bw-color-white);
+}
+
+.site-radio input {
+    display: none;
+}
+
+.site-radio input+label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid var(--bw-color-gray-60);
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.site-radio input:checked+label::before {
+    border: 5px solid var(--azul-02);
+    background-color: var(--bw-color-black);
+}
+
+.endereco-site {
+    margin: 16px 0;
+}
+
+.lista-form {
+    list-style-type: disc;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--bw-color-gray-70);
+}
+
+.lista-form ul li a {
+    text-decoration: initial !important;
+    color: var(--azul-02) !important;
+    font-style: var(--azul-02);
+}
+
+.lista-form ul li a:visited {
+    color: var(--azul-02) !important;
+}
+
+.form-cadastro button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+    width: 81px;
+    height: 40px;
+    border: none;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.form-cadastro button img {
+    object-fit: contain;
+}

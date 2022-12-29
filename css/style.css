@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*list-style: none;*/
+    text-decoration: none;
+}
+
+.strong-text {
+    font-weight: bold;
+}
+
+.top-sections{
+    display: flex;
+}
+
+.info-direita,
+.info-esquerda{
+    width: 50%;
+}
+
+
+/*Primeira seção*/
+.section-01{
+    background-image: url("/img/bg-diagonal-grande.svg");
+    height: 650px;
+}
+.section-01 .info-esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    margin-top: 120px;
+    margin-left: 108px;
+}
+.section-01 .info-esquerda h1{
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 100%;
+    color: #212429;
+}
+.section-01 .info-esquerda h1 span{
+    color: #19C1CE;
+}
+.section-01 .info-esquerda p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #212429;
+}
+/*Fim da primeira seção*/
+
+/*Segunda seção*/
+.section-02{
+    background: #0B485B;
+    height: 331px;
+}
+
+.section-02 img {
+    width: 96px;
+    position: absolute;
+}
+
+.section-02 .info-esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 80px;
+    margin-left: 108px;
+}
+.section-02 .info-esquerda h2{
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 110%;
+    color: #FFFFFF;
+}
+.section-02 .info-esquerda p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.section-02 .info-esquerda h1 span{
+    color: #19C1CE;
+}
+/*Fim da segunda seção*/
+
+/*Terceira seção*/
+.section-03{
+    background-image: url("/img/bg-diagonal-invertido.png");
+    height: 902px;
+}
+.section-03 .info-esquerda{
+    width: 60%;
+}
+.section-03 .info-direita{
+    width: 40%;
+}
+.img-section-03 {
+    background-image: url("/img/img-rdoer.jpg");
+    width: 600px;
+    height: 600px;
+    margin-top: 222px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.img-section-03 img {
+    width: 120px;
+}
+
+.container-lista {
+    max-width: 496px;
+    margin-top: 222px;
+}
+
+.container-lista h2 {
+    max-width: 496px;
+    padding-bottom: 32px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.container-lista p {
+    padding-bottom: 24px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 120%;
+    color: #212429;
+}
+
+.list-stylished {
+    list-style-image: url("/img/list-item.svg");
+}
+
+.list-stylished li::before{
+    margin-right: 19px;
+}
+
+.list-stylished li {
+    margin-bottom: 2em;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bw-color-gray-100);
+
+}
+/*Fim da terceira seção*/
+
+.botton-sections{
+    display: flex;
+}
+.section01{
+    height: 636px;
+    justify-content: center;
+    align-items: center;
+}
+.botton-sections .banner-botton{
+    width: 1224px;
+    height: 396px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/img/section-bg.svg");
+    align-items: center;
+}
+.banner-botton h2{
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.banner-botton p{
+    max-width: 808px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+.banner-botton a img{
+    width: 256px;
+    margin-top: 40px;
+}
+.section02 {
+    height: 317px;
+}
+.section02 .info-esquerda {
+    display: flex;
+    width: 100%;
+    background-color: #F1F3F5;
+}
+.section02 .info-direita{
+    width: 5%;
+}
+.section02 .info-esquerda .info-video {
+    max-width: 400px;
+    margin-top: 66px;
+    margin-left: 108px;
+}
+.section02 .info-esquerda div h3{
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 110%;
+    color: #212429;
+}
+.section02 .info-esquerda div a{
+    margin-top: 40px;
+}
+.imagem-video{
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 584px;
+    background-image: url("/img/img-video.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 649px;
+    height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section03{
+    height: 508px;
+}
+.section03 .info-direita{
+        display: flex;
+        align-self: center;
+        flex-wrap: wrap;
+        gap: 5px;
+}
+.section03 .info-esquerda{
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: flex-start;
+        padding-left: 108px;
+}
+.section03 .info-esquerda h2{
+        font-family: 'Darker Grotesque';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 100%;
+        color: #212429;
+}
+.section03 .info-esquerda p{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #212429;
+        margin-top: 24px;
+}
+
+.section03 .info-esquerda a img{
+    margin-top: 40px;
+}
+.logo-botton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 100px;
+}
+
+.logo-botton p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 8px;
+}
