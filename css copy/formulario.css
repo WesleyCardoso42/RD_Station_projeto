@@ -12,7 +12,7 @@
     font-size: 20px;
     line-height: 110%;
     text-align: center;
-    color: var(--bw-color-gray-100);
+    color: #212429;
 }
 
 .form-cabecalho p {
@@ -24,25 +24,24 @@
     font-size: 13px;
     line-height: 120%;
     text-align: center;
-    color: var(--bw-color-gray-70);
+    color: #7E8A98;
 }
 
 hr {
-    border: 1px solid var(--bw-color-gray-30);
+    border: 1px solid #CFD3D8;
     width: 80%;
     margin-bottom: 1rem;
 }
 
 
 .form-cadastro {
-    height: 1083px;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 490px;
-    height: auto;
     margin-top: 32px;
-    background: var(--bw-color-white);
+    background: #fff;
     box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
     border-radius: 2px;
 }
@@ -68,15 +67,15 @@ label {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: var(--bw-color-black);
+    color: #000;
 }
 
 .form-cadastro input {
     box-sizing: border-box;
     height: 40px;
-    background: var(--bw-color-white);
-    border: 2px solid var(--bw-color-black);
-    box-shadow: inset 6px 6px 0px var(--bw-color-white);
+    background: #fff;
+    border: 2px solid #000;
+    box-shadow: inset 6px 6px 0px #fff;
 }
 
 .site-radio input {
@@ -89,7 +88,7 @@ label {
     height: 18px;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 1px solid var(--bw-color-gray-60);
+    border: 1px solid #97A1AC;
     background-color: transparent;
     display: inline-block;
     vertical-align: middle;
@@ -97,8 +96,8 @@ label {
 }
 
 .site-radio input:checked+label::before {
-    border: 5px solid var(--azul-02);
-    background-color: var(--bw-color-black);
+    border: 5px solid #19C1CE;
+    background-color: #000;
 }
 
 .endereco-site {
@@ -113,17 +112,17 @@ label {
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
-    color: var(--bw-color-gray-70);
+    color: #7E8A98;
 }
 
 .lista-form ul li a {
     text-decoration: initial !important;
-    color: var(--azul-02) !important;
-    font-style: var(--azul-02);
+    color: #19C1CE !important;
+    font-style: #19C1CE;
 }
 
 .lista-form ul li a:visited {
-    color: var(--azul-02) !important;
+    color: #19C1CE !important;
 }
 
 .form-cadastro button {
@@ -145,4 +144,18 @@ label {
 
 .form-cadastro button img {
     object-fit: contain;
+}
+
+@media (max-width: 750px){
+    .form-cadastro {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 490px;
+        margin-top: 32px;
+        background: #fff;
+        box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+        border-radius: 2px;
+    }
 }

@@ -62,11 +62,45 @@ const toggleModal = () => {
 
 function trocaCards() {
     const cardsEstaticos = document.getElementById('sld-desktop')
+    const cardsSlider = document.getElementById('sld-mobile')
     if(window.innerWidth < 900){
         cardsEstaticos.classList.add("dp-none")
+        cardsSlider.classList.remove("dp-none")
     }else{
         cardsEstaticos.classList.remove("dp-none")
+        cardsSlider.classList.add("dp-none")
     }
 }
 
 window.addEventListener('resize', trocaCards)
+
+let swiper = new Swiper(".slide-content", {
+    slidesPerView: 1,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        360: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 1,
+        },
+        950: {
+            slidesPerView: 1,
+        },
+    },
+  });
+  console.log(swiper);
