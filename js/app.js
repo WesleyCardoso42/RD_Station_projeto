@@ -59,3 +59,14 @@ const toggleModal = () => {
 [openModalButton[0], openModalButton[1], closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
+
+function trocaCards() {
+    const cardsEstaticos = document.getElementById('sld-desktop')
+    if(window.innerWidth < 900){
+        cardsEstaticos.classList.add("dp-none")
+    }else{
+        cardsEstaticos.classList.remove("dp-none")
+    }
+}
+
+window.addEventListener('resize', trocaCards)

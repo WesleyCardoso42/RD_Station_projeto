@@ -1,24 +1,23 @@
 <section class="sect-geral sect-carousel">
     <h2 class="tittle-carousel">
-        A ferramenta de Automação de Marketing líder na América Latina
+        A ferramenta de Automação de <br>Marketing líder na América Latina
     </h2>
 
-     <div id="slider" class="slider">
-        <div class="wrapper">
-            <div id=slides class="slides">
-                <?php
+     <div id="sld-desktop" class="">
+        <div class="static-cards">
+            <?php
                 require_once "data/cards.php";
                 foreach($cards as $card){
-                    echo '<div class="slide card"> 
-                        <img src=' . $card["imagem"] . '>
+                    echo 
+                    '<div class="card"> 
+                        <div class="img-card">
+                            <img src=' . $card["imagem"] . '>
+                        </div>
                         <h2>' . $card["titulo"] . '</h2>
                         <p>' . $card["paragrafo"] . '</p>
                     </div>';
                 }
             ?>
-            </div>
-            <a id="prev" class="control prev"></a>
-            <a id="next" class="control next"></a>
         </div>
     </div>
 </section>
