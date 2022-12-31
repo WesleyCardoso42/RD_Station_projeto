@@ -42,24 +42,18 @@ btnMenu.addEventListener("touchstart", handleButtonClick)
 function newPopup(){
     varWindow = window.open ('/components/videopopup.php', 'popup')
 }
-
-
 //Modal --->
-
 const openModalButton = document.querySelectorAll(".open-modal");
 const closeModalButton = document.querySelector("#close-modal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
-
 const toggleModal = () => {
   modal.classList.toggle("hide");
   fade.classList.toggle("hide");
 };
-
 [openModalButton[0], openModalButton[1], closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
-
 function trocaCards() {
     const cardsEstaticos = document.getElementById('sld-desktop')
     const cardsSlider = document.getElementById('sld-mobile')
@@ -71,9 +65,7 @@ function trocaCards() {
         cardsSlider.classList.add("dp-none")
     }
 }
-
 window.addEventListener('resize', trocaCards)
-
 let swiper = new Swiper(".slide-content", {
     slidesPerView: 1,
     spaceBetween: 25,
@@ -103,4 +95,53 @@ let swiper = new Swiper(".slide-content", {
         },
     },
   });
-  console.log(swiper);
+
+const radioButtons = document.querySelectorAll('input[name="site"]')
+const enderecoSite = document.querySelector(".endereco-site")
+radioButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        if(btn.id === "checkbox-2" && btn.checked === true){
+            enderecoSite.removeAttribute('required')
+        }
+    });
+})
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+function id( el ){
+	return document.getElementById( el );
+}
+window.onload = function(){
+	id('telefone').onkeyup = function(){
+		mascara( this, mtel );
+	}
+}
+const icones = document.querySelectorAll('.password')
+const inputsSenhas = document.querySelectorAll('.input-senha')
+icones[0].addEventListener('click', () => {
+    senha = inputsSenhas[0]
+    if(senha.type === 'password'){
+    senha.type = 'text'
+    } else {
+        senha.type = 'password'
+    }
+})
+icones[1].addEventListener('click', () => {
+    senha = inputsSenhas[1]
+    if(senha.type === 'password'){
+    senha.type = 'text'
+    } else {
+        senha.type = 'password'
+    }
+})

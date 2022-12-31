@@ -24,6 +24,40 @@ a {
   font-style: normal;
 }
 
+.site-radio input {
+    display: none;
+}
+
+.site-radio input+label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #97A1AC;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.site-radio input:checked+label::before {
+    border: 5px solid #19C1CE;
+    background-color: #000;
+}
+
+.lista-form{
+  list-style-type: disc;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7E8A98;
+}
+
 @media (min-width: 360px) {
   .top-section-form {
     width: fit-content;
@@ -48,11 +82,17 @@ a {
   /*---Formulário---*/
 
   .form-cadastro {
-    background: rgb(224, 224, 224);
+    background: #fff;
     margin: 0 1rem;
     display: flex;
     flex-flow: column;
     align-items: center;
+    box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+    border-radius: 2px;
+  }
+
+  .form-cadastro .margem {
+    margin: 1rem;
   }
   .form-cabecalho,
   .input-text {
@@ -89,7 +129,7 @@ a {
     margin-bottom: 0.5rem;
   }
 
-  .input-text input{
+  .input-text input, select{
     width: 100%;
     box-sizing: border-box;
     height: 40px;
@@ -102,6 +142,11 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: #212429;
+  }
+  .toggle-senha img{
+    position: absolute;
+    margin: 10px -35px;
+    cursor: pointer;
   }
   .site-empresa{
     width: 100%;
@@ -120,11 +165,17 @@ a {
     background: #FFFFFF;
     border: 2px solid #000000;
     box-shadow: inset 6px 6px 0px #EEFBFB;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
   }
   .input-text input::placeholder{
     margin-left: 0.75rem;
   }
+
+  .button button{
+    margin: 1.5rem 0 2.5rem;
+    background-color: transparent;
+  }
+
 }
 
 /* .card{
