@@ -76,7 +76,7 @@
             
         <ul class="lista-form">
             <li>
-                Ao criar minha conta estou de acordo com os <a href="">termos de uso</a> do software e <a href="">política de privacidade</a>.
+                Ao criar minha conta estou de acordo com os <a href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/" target="blank">termos de uso</a> do software e <a href="https://legal.rdstation.com/pt/privacy-policy/" target="blank">política de privacidade</a>.
             </li>
             <li>
                 Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.

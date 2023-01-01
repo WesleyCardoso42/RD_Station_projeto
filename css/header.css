@@ -4,6 +4,7 @@
   justify-content: space-between;
   background: #fff;
   padding: 0 2rem;
+  border-bottom: 1px solid #cfd3d8;
 }
 
 .logo {
@@ -40,6 +41,18 @@
 }
 
 @media (max-width: 600px) {
+  .buttons-header {
+    background-color: #f1f3f5;
+    border-top: #cfd3d8 1px solid;
+    margin-top: 3rem;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 14px 2rem;
+  }
   .menu {
     display: block;
     position: absolute;
@@ -88,7 +101,7 @@
   }
 
   .nav.active .menu {
-    height: 70vh;
+    height: 75vh;
     visibility: visible;
     overflow-y: auto;
   }
@@ -106,4 +119,3 @@
     top: -0.4375rem;
   }
 }
-

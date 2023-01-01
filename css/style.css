@@ -302,11 +302,9 @@ select {
 .top-section-lista .img-destaque img:last-child {
   width: 100%;
 }
-
 .container-lista {
   margin-left: 8rem;
 }
-
 .sect-carousel {
   padding: 6.75rem;
 }
@@ -320,18 +318,17 @@ select {
   color: #212429;
   margin-bottom: 4rem;
 }
-
 .card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 22.5rem;
   padding: 24px;
   gap: 16px;
   background: #ffffff;
   box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
   border-radius: 2px;
 }
-
 .img-card {
   width: 64px;
   height: 64px;
@@ -341,7 +338,6 @@ select {
   border-radius: 50%;
   background: #f1f3f5;
 }
-
 .card h2 {
   font-family: "Darker Grotesque";
   font-style: normal;
@@ -362,15 +358,66 @@ select {
   align-items: center;
   color: #212429;
 }
-
 .swiper-button-prev,
 .swiper-button-next {
   display: none !important;
 }
-
 .botton-section01 {
   padding: 1rem;
 }
+.static-cards {
+  display: flex;
+  flex-flow: wrap;
+  gap: 16px;
+}
+.botton-section01 {
+  padding: 0 6.75rem !important;
+}
+.botton-section01 .banner-botton {
+  padding: 1rem 13rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.botton-section01 .banner-botton img {
+  margin-top: 3rem;
+  width: 13rem;
+  padding: 0;
+}
+.botton-section02 {
+  display: flex;
+  width: 91.8%;
+  height: 19.813rem !important;
+  margin-top: 9rem;
+}
+.imagem-video {
+  width: 40.563rem;
+  height: 22.813rem !important;
+  position: relative;
+  right: 35px;
+  margin-top: -42px !important;
+}
+
+.botton-section03 {
+  display: flex;
+  margin: 0 7.75rem;
+  padding: initial;
+}
+
+.logos {
+    margin-top: 0 !important;
+    width: 36.375rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem !important;
+    justify-content: space-between;
+}
+
+.botton-section03 .info-esquerda{
+  max-width: 500px;;
+}
+
 /*---------------*/
 @media (max-width: 360px) {
 }
@@ -391,18 +438,27 @@ select {
     color: #7e8a98;
   }
   .top-section-form {
-    width: fit-content;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
     background-image: url(/img/bg-diagonal-grande.svg);
     background-repeat: no-repeat;
-    background-size: 200rem;
+    background-size: 201rem;
     background-position-x: -70rem;
     background-position-y: 0rem;
   }
+  .top-section-form div {
+    width: initial;
+  }
   .top-section-form .info-esquerda {
+    width: initial;
     margin: 0rem 1rem 2rem;
     padding-top: 2.5rem;
   }
   .top-section-form .info-direita {
+    width: initial;
+    display: flex;
+    justify-content: center;
     padding-bottom: 2.5rem;
   }
   .top-section-form .info-esquerda h1 {
@@ -427,6 +483,7 @@ select {
   }
 
   .form-cadastro {
+    position: initial;
     background: #fff;
     max-width: 25rem;
     margin: 0 1rem;
@@ -540,6 +597,7 @@ select {
   .top-section-faixa-azul .info-esquerda {
     height: 340px;
     margin: 0 1rem;
+    width: initial;
   }
 
   .top-section-faixa-azul .info-esquerda h2 {
@@ -564,6 +622,21 @@ select {
     background-size: 200rem;
     background-position-x: -96rem;
     background-position-y: -69rem;
+  }
+
+  .espacamento-interno-lista {
+    display: flex;
+    flex-flow: column;
+  }
+  .container-lista {
+    width: initial;
+    margin-left: initial;
+  }
+
+  .img-destaque {
+    display: initial;
+    padding-top: 3.5rem;
+    height: 38rem;
   }
 
   .top-section-lista h2 {
@@ -615,7 +688,7 @@ select {
     display: flex;
     align-items: center;
     color: #212429;
-    margin: 2.5rem 0 2rem;
+    margin: 0 0 2rem;
   }
 
   .card {
@@ -666,10 +739,10 @@ select {
   }
 
   .botton-section01 {
-    padding: 1rem;
+    padding: 1rem !important;
   }
   .banner-botton {
-    padding: 1rem;
+    padding: 1rem !important;
     background-image: url(/img/graphs.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -698,8 +771,11 @@ select {
   }
 
   .botton-section02 {
+    display: block;
+    flex-flow: column;
+    width: initial;
     padding: 1rem;
-    height: 22rem;
+    height: 22rem !important;
     background-color: #f1f3f5;
   }
 
@@ -720,12 +796,14 @@ select {
     margin-top: 1rem;
   }
   .imagem-video {
-    margin-top: 2rem;
-    height: 11.5rem;
+    width: 100%;
+    height: 18.813rem !important;
+    margin-top: 2rem !important;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/img/img-video.png");
+    background-image: url(/img/img-video.png);
     background-size: cover;
   }
 
@@ -735,7 +813,9 @@ select {
 
   .botton-section03 {
     padding: 0 1rem;
-    margin-top: 5rem;
+    margin: 0 0 !important;
+    margin-top: 12rem !important;
+    flex-flow: column;
   }
 
   .botton-section03 .info-esquerda h2 {
@@ -763,11 +843,11 @@ select {
     align-items: center;
   }
   .logos {
-    margin-top: 2.5rem;
-    width: 15.375rem;
+    margin-top: 2.5rem !important;
+    width: 15.375rem !important ;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem !important;
     justify-content: space-between;
   }
   .logo-botton {
@@ -827,7 +907,7 @@ select {
     overflow: hidden;
   }
   .banner-botton {
-    padding: 1rem;
+    padding: 1rem !important;
     background-image: url(/img/graphs.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -851,8 +931,8 @@ select {
     color: #ffffff;
   }
   .banner-botton img {
-    width: -webkit-fill-available;
-    padding: 2rem 2.5rem 0rem;
+    width: -webkit-fill-available !important;
+    padding: 2rem 2.5rem 0rem !important;
   }
 
   .botton-section02 {
@@ -979,3 +1059,4 @@ select {
     padding-bottom: 2.5rem;
   }
 }
+ 
