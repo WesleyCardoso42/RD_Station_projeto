@@ -20,7 +20,7 @@
     <!-- <div class="info-direita"></div> -->
 </section>
 <section class="top-section-lista">
-    <div class="espaçamento-interno-lista">
+    <div class="espacamento-interno-lista">
         <div class="container-lista">
             <h2>
                 Resultados previsíveis e mais clientes para sua empresa
