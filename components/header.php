@@ -10,6 +10,10 @@
             <li><a href="/">Menu 3</a></li>
             <li><a href="/">Menu 4</a></li>
             <li><a href="/">Menu 5</a></li>
+            <li class="buttons-header">
+                <a href="/"><img src="/img/button-menu-01.svg" alt=""></a>
+                <a href="/"><img src="/img/button-menu-02.svg" alt=""></a>
+            </li>
         </ul>
     </nav>
 </header>

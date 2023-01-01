@@ -17,7 +17,46 @@
         <p><strong class="strong-text">Estaremos com você do planejamento até a prática!</strong></p>
 
     </div>
-    <div class="info-direita"></div>
+    <!-- <div class="info-direita"></div> -->
+</section>
+<section class="top-section-lista">
+    <div class="espaçamento-interno-lista">
+        <div class="container-lista">
+            <h2>
+                Resultados previsíveis e mais clientes para sua empresa
+            </h2>
+            <p>
+                Torne sua atuação no Marketing Digital mais eficaz
+            </p>
+            <ul class="list-stylished">
+                <li>
+                    <strong class="strong-text">Ferramentas intuitivas</strong> e com modelos prontos, vídeos explicativos e passo a passo guiado
+                </li>
+                <li>
+                    <strong class="strong-text">Implementação com especialistas</strong> focada em planejamento e prática (nos planos Marketing Pro e
+                    Enterprise)
+                </li>
+                <li>
+                    <strong class="strong-text">Time de especialistas em Sucesso do Cliente</strong> para apoiar na otimização da estratégia em cada fase da
+                    sua jornada (nos
+                    planos Marketing Pro e Enterprise)
+                </li>
+                <li>
+                    <strong class="strong-text">Suporte técnico</strong> em português, espanhol e inglês para tirar dúvidas, <strong class="strong-text">com 97% de satisfação</strong> entre
+                    nossos clientes
+                </li>
+                <li>
+                    <strong class="strong-text">Muito conteúdo educativo</strong>, eventos, cursos da <a href="#">RD University</a> e comunidades para você continuar
+                    evoluindo
+                </li>
+
+            </ul>
+        </div>
+        <div class="img-destaque">
+            <img src="img/canto-direita-mobile.svg" alt="">
+            <img src="img/img-rdoer.jpg">
+        </div>
+    </div>
 </section>
 
 

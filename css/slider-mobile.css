@@ -1,4 +1,8 @@
 /* Google Fonts - Poppins */
+.swiper-wrapper{
+    margin-bottom: 2.5rem !important;
+}
+
 .slide-container {
     max-width: 1120px;
     width: 100%;
@@ -7,13 +11,7 @@
 
 .slide-content {
     margin: 0 40px;
-    overflow: hidden;
     border-radius: 2px;
-}
-
-.card {
-    border-radius: 2px;
-    background-color: #FFF;
 }
 
 .image-content,
@@ -141,54 +139,6 @@
     flex-wrap: wrap;
     gap: 16px;
 }
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 16px;
-    width: 392px;
-    height: 393px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
-    border-radius: 2px;
-}
-
-.img-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background: #F1F3F5;
-}
-
-.card h2 {
-    font-family: 'Darker Grotesque';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 110%;
-    display: flex;
-    align-items: center;
-    color: #212429;
-}
-
-.card p {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    color: #212429;
-}
-
-
-
 
 @media screen and (max-width: 768px) {
     .slide-content {

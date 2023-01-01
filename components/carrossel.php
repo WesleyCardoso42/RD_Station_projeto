@@ -1,9 +1,9 @@
-<section class="sect-geral sect-carousel">
+<section class="sect-carousel">
     <h2 class="tittle-carousel">
-        A ferramenta de Automação de <br>Marketing líder na América Latina
+        A ferramenta de Automação de Marketing líder na América Latina
     </h2>
 
-     <div id="sld-desktop" class="">
+     <div id="sld-desktop" class="dp-none">
         <div class="static-cards">
             <?php
                 require_once "data/cards.php";
@@ -41,8 +41,8 @@
                 </div>
             </div>
 
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-button-next swiper-navBtn dp-none"></div>
+            <div class="swiper-button-prev swiper-navBtn dp-none"></div>
             <div class="swiper-pagination"></div>
         </div>
     </div>

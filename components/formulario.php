@@ -86,7 +86,7 @@
             </li>
         </ul>
     </div>
-    <div class="button">
+    <div class="button-form">
         <button type="submit" id="enviar-form"><img src="img/Mobile-button.png" alt=""></button>
     </div>
 </form>
