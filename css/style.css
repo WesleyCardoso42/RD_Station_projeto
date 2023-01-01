@@ -19,7 +19,8 @@ p,
 input,
 label,
 li,
-a {
+a,
+span {
   font-family: "Nunito Sans";
   font-style: normal;
 }
@@ -174,6 +175,14 @@ a {
   .button button{
     margin: 1.5rem 0 2.5rem;
     background-color: transparent;
+  }
+
+  #valida-senhas,
+  #valida-url {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: red;
   }
 
 }
